@@ -1,0 +1,40 @@
+:root {
+  --window-opacity: 0.8; /* Adjust this value between 0 and 1 */
+  --text-brightness: 1.2; /* Adjust this value to make text brighter */
+}
+
+#main-window {
+  background: transparent !important;
+  -moz-appearance: -moz-win-glass !important;
+}
+
+#browser {
+  background: rgba(30, 30, 30, var(--window-opacity)) !important;
+  backdrop-filter: blur(16px) !important;
+}
+
+.tabbrowser-tabbox {
+  background: transparent !important;
+}
+
+#navigator-toolbox {
+  background: transparent !important;
+}
+
+#nav-bar {
+  background: transparent !important;
+}
+
+/* This ensures content area is also transparent */
+#content-deck {
+  background: transparent !important;
+}
+
+browser[type="content-primary"] {
+  background: transparent !important;
+}
+
+/* Brighten text colors */
+* {
+  color: rgba(255, 255, 255, var(--text-brightness)) !important;
+}

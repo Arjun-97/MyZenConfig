@@ -1,0 +1,311 @@
+/* Apply transparency to the Firefox home page (about:home and about:newtab) */
+@-moz-document url("about:home"), url("about:newtab") {
+    .activity-stream {
+        background: transparent !important;
+    }
+
+    /* Optional: Adjust transparency for specific elements on the home page */
+    .search-wrapper, .top-site-outer, .card-outer, .context-menu-button {
+        background: transparent !important;
+        backdrop-filter: blur(16px) !important;
+    }
+}
+
+@-moz-document domain(monkeytype.com) {
+    body {
+        background: transparent !important;
+    }
+}
+
+@-moz-document domain(zen-browser.app) {
+    body,
+    html {
+        background: transparent !important;
+    }
+}
+
+@-moz-document domain(chat.deepseek.com) {
+    body,
+    html,
+    .be88ba8a,
+    .f0d4f23d {
+        background: transparent !important;
+    }
+}
+
+@-moz-document domain(youtube.com) {
+    /* Basic elements */
+    body,
+    html,
+    ytd-app,
+    ytd-page-manager,
+    #content {
+        background: transparent !important;
+    }
+
+    ytd-app {
+        --app-drawer-content-container-background-color: transparent !important;
+    }
+
+    html[dark], [dark] {
+        --yt-spec-base-background: transparent !important;
+    }
+
+    /* Header and navigation */
+    ytd-masthead,
+    #masthead-container {
+        background: transparent !important;
+    }
+
+    /* Search box and header components */
+    ytd-searchbox,
+    #container.ytd-masthead,
+    #background.ytd-masthead,
+    #header.ytd-app {
+        background: transparent !important;
+    }
+
+    /* Sidebar and guide */
+    ytd-guide-section-renderer,
+    ytd-guide-entry-renderer,
+    tp-yt-app-drawer,
+    #guide,
+    #guide-content,
+    ytd-mini-guide-renderer,
+    ytd-mini-guide-entry-renderer {
+        background: transparent !important;
+    }
+
+    /* Channel page elements */
+    ytd-c4-tabbed-header-renderer,
+    tp-yt-app-header-layout,
+    ytd-browse,
+    ytd-two-column-browse-results-renderer,
+    ytd-tabbed-page-header,
+    #page-header-container,
+    #page-header {
+        background: transparent !important;
+    }
+
+    /* Video page elements */
+    ytd-watch-flexy,
+    ytd-watch-metadata,
+    ytd-video-secondary-info-renderer,
+    #secondary,
+    #related,
+    ytd-comments,
+    ytd-comment-thread-renderer {
+        background: transparent !important;
+    }
+
+    /* Video player elements */
+    .html5-video-player,
+    .ytp-chrome-top,
+    .ytp-chrome-bottom {
+        background-color: transparent !important;
+    }
+
+    /* Playlist and engagement panels */
+    ytd-playlist-panel-renderer,
+    ytd-engagement-panel-section-list-renderer,
+    ytd-playlist-video-renderer {
+        background: transparent !important;
+    }
+
+    /* Popup menus and overlays */
+    tp-yt-paper-listbox,
+    ytd-menu-popup-renderer,
+    ytd-popup-container {
+        background: transparent !important;
+    }
+
+    /* Rich content and shelves */
+    ytd-rich-shelf-renderer,
+    ytd-rich-item-renderer,
+    ytd-rich-section-renderer {
+        background: transparent !important;
+    }
+
+    /* Managers */
+    yt-mdx-manager,
+    yt-playlist-manager,
+    yt-hotkey-manager {
+        background: transparent !important;
+    }
+
+    /* Additional elements that might cause black boxes */
+    .ytd-video-primary-info-renderer,
+    #above-the-fold,
+    #top-row {
+        background: transparent !important;
+    }
+}
+
+@-moz-document domain(lichess.org) {
+    body,
+    html {
+        background: transparent !important;
+    }
+}
+
+@-moz-document domain(reddit.com) {
+    body,
+    html {
+        background: transparent !important;
+    }
+    #comment-tree {
+        background: transparent !important;
+    }
+    .bg-neutral-background,
+    .bg-neutral-background-weak {
+        background: rgba(0, 0, 0, 0.1) !important;
+    }
+    .bg-\[color\:var\(--shreddit-content-background\)\] {
+        background-color: transparent !important;
+    }
+    .threadline,
+    .shreddit-post,
+    aside,
+    comment-body-header,
+    shreddit-comment-tree {
+        background-color: transparent !important;
+    }
+}
+
+@-moz-document domain(chatgpt.com) {
+    body, html,
+    .bg-token-main-surface-primary, /* Navbar */
+    .bg-token-sidebar-surface-primary, /* Sidebar */
+    .bg-token-sidebar-surface-primary * /* All sidebar elements */ {
+        background: transparent !important;
+    }
+}
+
+@-moz-document domain(monica.im) {
+    body,
+    html {
+        background: transparent !important;
+    }
+}
+
+@-moz-document domain(google.com) {
+    .sfbg {
+        background-color: rgba(255, 255, 255, 0.5) !important;
+        backdrop-filter: blur(20px);
+    }
+    body,
+    html,
+    .f6F9Be,
+    div#search > * {
+        background-color: transparent !important;
+    }
+    .g,
+    .appbar {
+        background-color: transparent !important;
+    }
+    div#rso {
+        * {
+            background-color: transparent !important;
+        }
+    }
+    div#cnt > div {
+    }
+}
+
+@-moz-document domain(github.com) {
+    body,
+    html,
+    header,
+    #repository-container-header,
+    .gh-header,
+    .bgColor-muted,
+    section,
+    .feed-background,
+    .color-bg-default {
+        background-color: transparent !important;
+    }
+
+    .feed-item-content,
+    .discussion-timeline-actions {
+        background-color: rgba(0, 0, 0, 0.1) !important;
+    }
+}
+
+@-moz-document domain(duckduckgo.com) {
+    body,
+    html,
+    .site-wrapper,
+    .zci-wrap,
+    .zci,
+    .header-wrap,
+    .metabar,
+    .footer,
+    *::before,
+    .module--translations-translatedtext {
+        background: transparent !important;
+    }
+}
+
+@-moz-document domain(discord.com) {
+    :root {
+        .layer_cd0de5 :is([role="dialog"], .streamPreview_adbea6) {
+            background: hsl(var(--primary-700-hsl)) !important;
+        }
+
+        --primary-560: rgba(0, 0, 0, 0.05) !important;
+        --primary-600: rgba(0, 0, 0, 0.05) !important;
+        --primary-630: rgba(0, 0, 0, 0.05) !important;
+        --primary-645: rgba(0, 0, 0, 0.05) !important;
+        --primary-660: rgba(0, 0, 0, 0.05) !important;
+        --primary-700: rgba(0, 0, 0, 0.05) !important;
+        --primary-730: rgba(0, 0, 0, 0.05) !important;
+        --primary-760: rgba(0, 0, 0, 0.05) !important;
+        --primary-830: rgba(0, 0, 0, 0.05) !important;
+        --primary-860: rgba(0, 0, 0, 0.05) !important;
+        --primary-900: rgba(0, 0, 0, 0.05) !important;
+    }
+
+    [class^="focusLock_"] {
+        --saturation-factor: 1;
+        --primary-600: hsl(var(--primary-600-hsl) / 1) !important;
+        --primary-600-hsl: 222.857 calc(var(--saturation-factor, 1) * 6.667%)
+            20.588% !important;
+        --modal-background: var(--primary-600);
+    }
+
+    .no-webkit-scrollbar * {
+        scrollbar-width: none !important;
+    }
+}
+
+@-moz-document domain(x.com) {
+    :root {
+        --theme-popup: rgba(0, 0, 0, 0.8);
+        --theme-bg-dim: rgba(0 ,0, 0, 0.4);
+    }
+
+    body {
+        background-color: var(--theme-bg-dim) !important;
+    }
+
+    [data-testid="primaryColumn"],
+    [aria-label="Trending"] > * > *,
+    [aria-label="Home timeline"] > *> *,
+    [aria-label="Search"] > * {
+        background: transparent !important;
+    }
+
+    select,
+    [data-testid="Dropdown"],
+    [data-testid="hoverCardParent"],
+    [data-testid="DMDrawer"] > div,
+    div[role="dialog"],
+    div[role="listbox"],
+    div[role="radio"] {
+        background: var(--theme-popup) !important;
+    }
+
+    .r-kemksi, .r-5zmot {
+        background: transparent !important;
+    }
+}
